@@ -1,0 +1,69 @@
+.studentDetails {
+  width: 100%;
+  overflow-x: hidden;
+}
+.studentDetails h1 {
+  color: aliceblue;
+  letter-spacing: 4px;
+  position: sticky;
+  color: black;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+
+.studentDetail {
+  display: grid; /* Using grid layout for better structure */
+  grid-template-columns: repeat(5, 1fr); /* Create four equal columns */
+  gap: 20px; /* Gap between grid items */
+  padding: 20px;
+}
+
+.detail {
+  margin-top: 10px;
+}
+
+.card {
+  background-color: #f6f1ee;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.loader {
+  margin-left: 50%;
+  margin-top: 10%;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@media screen and (max-width: 2000px) {
+  .studentDetail {
+    margin-top: 50px;
+    display: grid; /* Using grid layout for better structure */
+    grid-template-columns: repeat(3, 1fr); /* Create four equal columns */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 767px) {
+  .studentDetail {
+    display: grid; /* Using grid layout for better structure */
+    grid-template-columns: repeat(1, 1fr); /* Create four equal columns */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+  }
+}
