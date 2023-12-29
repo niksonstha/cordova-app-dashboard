@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: "Poppins", sans-serif;
+  background-color: #31304d;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.navbar {
+  background-color: #b6bbc4;
+  width: 20%;
+  transition: width 0.3s ease-in-out;
+}
+
+.dashboard {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.smallerNavbar {
+  width: 4%;
+}
+
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust width of the scrollbar */
+  height: 10px; /* Adjust height of the scrollbar */
+}
+
+/* Track (the area where the thumb doesn't cover) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set track background color */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #270742; /* Set thumb color */
+  border-radius: 5px; /* Round off the edges of the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change thumb color on hover */
+}
