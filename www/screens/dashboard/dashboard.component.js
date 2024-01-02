@@ -63,16 +63,18 @@ angular.module("myApp").component("dashboard", {
       var imageCarousel = $("#imageCarousel");
 
       var imgElement = document.createElement("img");
+      imgElement.onload = function () {
+        imgElement.style.maxWidth = "100%";
+
+        imageCarousel.owlCarousel("add", imgElement);
+      };
+      imgElement.onerror = function () {
+        console.error("Error loading image:", savedFilePath);
+        // Handle error: Maybe display a placeholder image or show an error message
+      };
       imgElement.src = savedFilePath;
-      imgElement.style.maxWidth = "100%";
-      imgElement.style.marginRight = "10px";
-
-      var carouselItem = document.createElement("div");
-      carouselItem.classList.add("item");
-      carouselItem.appendChild(imgElement);
-
-      imageCarousel.owlCarousel("add", carouselItem).owlCarousel("update");
     }
+
     $scope.openCamera = function () {
       var srcType = Camera.PictureSourceType.CAMERA;
       var options = setOptions(srcType);

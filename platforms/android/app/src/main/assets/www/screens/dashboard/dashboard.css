@@ -12,3 +12,7 @@
   max-width: 100%;
   margin-right: 10px;
 }
+.owl-stage {
+  display: flex;
+  gap: 10px;
+}
