@@ -37,11 +37,10 @@
   .navbar {
     display: none;
   }
+}
+@media (min-width: 767px) {
   #toogleNavbarBar {
     display: none;
-    margin-top: 5px;
-    margin-left: 5px;
-    color: white;
   }
 }
 
