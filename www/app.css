@@ -37,11 +37,6 @@
   .navbar {
     display: none;
   }
-}
-@media (min-width: 767px) {
-  .navbar {
-    display: block;
-  }
   #toogleNavbarBar {
     display: none;
     margin-top: 5px;
