@@ -24,8 +24,15 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 myApp.controller("MainController", function ($scope) {
+  $scope.showNavbar = false;
   $scope.$on("toggleNavbarEvent", function () {
     var navbarElement = document.querySelector(".navbar");
     navbarElement.classList.toggle("smallerNavbar");
   });
+
+  $scope.toggleNavbar = function () {
+    $scope.showNavbar = !$scope.showNavbar;
+    const navbar = document.querySelector(".navbar");
+    navbar.style.display = $scope.showNavbar ? "block" : "none";
+  };
 });

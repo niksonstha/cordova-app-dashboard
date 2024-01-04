@@ -15,7 +15,7 @@
 .navbar {
   background-color: #b6bbc4;
   width: 20%;
-  transition: width 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .dashboard {
@@ -27,7 +27,22 @@
 .smallerNavbar {
   width: 4%;
 }
+#toogleNavbarBar {
+  display: none;
+}
 
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  #toogleNavbarBar {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+  }
+}
 
 /* Width and height of the scrollbar */
 ::-webkit-scrollbar {

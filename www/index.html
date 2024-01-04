@@ -81,10 +81,14 @@
   </head>
   <body>
     <div class="container" ng-controller="MainController" id="deviceready">
-      <div class="navbar">
+      <div class="navbar" ng-show="showNavbar">
         <navbar></navbar>
       </div>
-
+      <i
+        class="fa-solid fa-bars-staggered"
+        ng-click="toggleNavbar()"
+        id="toogleNavbarBar"
+      ></i>
       <div class="dashboard">
         <ui-view></ui-view>
       </div>
