@@ -212,10 +212,19 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "cordova"
       ],
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-camera": "7.0.0",
-    "cordova-plugin-file": "8.0.1"
+    "cordova-plugin-file": "8.0.1",
+    "cordova-plugin-device": "2.1.0"
   };
 });
