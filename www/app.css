@@ -15,7 +15,7 @@
 .navbar {
   background-color: #b6bbc4;
   width: 20%;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .dashboard {
@@ -34,7 +34,6 @@
 @media (max-width: 767px) {
   .navbar {
     display: none;
-    transition: all 0.3s ease-in-out;
   }
   #toogleNavbarBar {
     display: block;
