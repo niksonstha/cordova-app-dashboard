@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "dashboard",
+  "short_name": "dashboard",
+  "version": "com.dashboard.app",
+  "description": "Sample Apache Cordova App",
+  "author": "Apache Cordova Team",
+  "icons": [],
+  "start_url": "index.html"
+}

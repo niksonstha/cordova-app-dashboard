@@ -24,7 +24,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 myApp.controller("MainController", function ($scope) {
-  $scope.showNavbar = false;
+  $scope.showNavbar = true;
   $scope.$on("toggleNavbarEvent", function () {
     var navbarElement = document.querySelector(".navbar");
     navbarElement.classList.toggle("smallerNavbar");

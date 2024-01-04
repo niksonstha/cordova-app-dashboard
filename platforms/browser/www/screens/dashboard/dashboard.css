@@ -1,0 +1,18 @@
+.dashboard__component {
+  margin-left: 20px;
+}
+
+#savedImage {
+  width: 100px;
+}
+.owl-carousel {
+  background-color: #f0ece5;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  margin-right: 10px;
+}
+.owl-stage {
+  display: flex;
+  gap: 10px;
+}

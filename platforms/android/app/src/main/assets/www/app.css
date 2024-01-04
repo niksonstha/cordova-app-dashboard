@@ -15,7 +15,7 @@
 .navbar {
   background-color: #b6bbc4;
   width: 20%;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .dashboard {
@@ -28,16 +28,22 @@
   width: 4%;
 }
 #toogleNavbarBar {
-  display: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: white;
 }
 
 @media (max-width: 767px) {
   .navbar {
     display: none;
-    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 767px) {
+  .navbar {
+    display: block;
   }
   #toogleNavbarBar {
-    display: block;
+    display: none;
     margin-top: 5px;
     margin-left: 5px;
     color: white;
