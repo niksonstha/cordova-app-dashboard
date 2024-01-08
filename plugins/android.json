@@ -14,6 +14,9 @@
     "cordova-plugin-file": {
       "ANDROIDX_WEBKIT_VERSION": "1.4.0",
       "PACKAGE_NAME": "com.dashboard.app"
+    },
+    "ApiRequest": {
+      "PACKAGE_NAME": "com.dashboard.app"
     }
   },
   "dependent_plugins": {}

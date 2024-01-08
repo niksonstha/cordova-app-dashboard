@@ -19,6 +19,10 @@
             {
               "xml": "<allow-navigation href=\"cdvfile:*\" />",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"ApiRequest\"><param name=\"android-package\" value=\"ApiRequest.ApiRequest\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -74,6 +78,9 @@
     },
     "cordova-plugin-file": {
       "ANDROIDX_WEBKIT_VERSION": "1.4.0",
+      "PACKAGE_NAME": "com.dashboard.app"
+    },
+    "ApiRequest": {
       "PACKAGE_NAME": "com.dashboard.app"
     }
   },
@@ -291,10 +298,19 @@
         "cordova"
       ],
       "runs": true
+    },
+    {
+      "id": "ApiRequest.ApiRequest",
+      "file": "plugins/ApiRequest/www/ApiRequest.js",
+      "pluginId": "ApiRequest",
+      "clobbers": [
+        "cordova.plugins.ApiRequest"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-camera": "7.0.0",
-    "cordova-plugin-file": "8.0.1"
+    "cordova-plugin-file": "8.0.1",
+    "ApiRequest": "1.0.0"
   }
 }

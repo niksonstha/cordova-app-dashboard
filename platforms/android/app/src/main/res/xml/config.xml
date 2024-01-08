@@ -8,6 +8,9 @@
         <param name="onload" value="true" />
     </feature>
     <allow-navigation href="cdvfile:*" />
+    <feature name="ApiRequest">
+        <param name="android-package" value="ApiRequest.ApiRequest" />
+    </feature>
     <name>dashboard</name>
     <description>Sample Apache Cordova App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
