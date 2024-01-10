@@ -1,1 +1,1 @@
-var dashboard = angular.module("dashboard", ["studentlist"]);
+var dashboard = angular.module("dashboard", ["studentlist", "jokeslist"]);
