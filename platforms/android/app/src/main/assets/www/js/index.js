@@ -1,2 +1,4 @@
 document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {}
+function onDeviceReady() {
+  console.log(cordova.plugins.makeAPIRequest);
+}

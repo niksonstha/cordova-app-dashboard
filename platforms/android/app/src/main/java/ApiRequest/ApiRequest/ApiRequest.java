@@ -57,8 +57,8 @@ public class ApiRequest extends CordovaPlugin {
                 urlConnection.disconnect();
 
                 // Parse response as JSON and return
-                JSONArray jsonResponseArray = new JSONArray(response.toString());
-                callbackContext.success(jsonResponseArray);
+                JSONObject jsonResponse = new JSONObject(response.toString());
+                callbackContext.success(jsonResponse);
 
             } catch (IOException | JSONException e) {
                 e.printStackTrace();

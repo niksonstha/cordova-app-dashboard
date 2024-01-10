@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.dashboard.app"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.dashboard.app"
+    },
+    "ApiRequest": {
+      "PACKAGE_NAME": "com.dashboard.app"
+    }
+  },
+  "dependent_plugins": {}
+}

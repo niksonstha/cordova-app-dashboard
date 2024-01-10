@@ -1,1 +1,5 @@
-<h1>hello</h1>
+<div>
+  <input type="text" ng-model="categoryInput" placeholder="Enter category" />
+  <button ng-click="fetchJokes(categoryInput)">Search</button>
+  <div ui-grid="gridOptions" class="myGrid"></div>
+</div>

@@ -1,0 +1,26 @@
+<div class="nav__list" ng-class="{'smallerNavbar': isSmallerNavbar}">
+  <i
+    ng-if="!isSmallerNavbar"
+    class="fa-solid fa-xmark"
+    ng-click="toggleNavbar()"
+  ></i>
+  <i
+    ng-if="isSmallerNavbar && showBarsIcon"
+    class="fa-solid fa-bars"
+    ng-click="toggleNavbar()"
+  ></i>
+  <ul class="navContent">
+    <li>
+      <a ui-sref="dashboard">
+        <span ng-if="!isSmallerNavbar">Dashboard</span>
+        <i class="fas fa-chart-line" ng-if="isSmallerNavbar"></i>
+      </a>
+    </li>
+    <li>
+      <a ui-sref="studentDetails">
+        <span ng-if="!isSmallerNavbar">Student Details</span>
+        <i class="fas fa-user-graduate" ng-if="isSmallerNavbar"></i>
+      </a>
+    </li>
+  </ul>
+</div>
